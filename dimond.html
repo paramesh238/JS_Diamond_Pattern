@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Pattern</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <br><br>
+    <h1>Diamond Patter Using Loops in JavaScript</h1>
+    <br><br><br>
+    <script>
+        var n = 5;
+        //Outer loop for printing number of lines
+        for(var i=1;i<=n;i++)
+        {
+            // Inner loop for printing white spaces and *
+            for(var j=1;j<=(n-i);j++)
+            {
+                document.write("&nbsp;&nbsp;");
+            }
+            {
+                for(var k=1;k<=2*i-1;k++)
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        //Outer loop for printing number of lines
+        for(var i=1;i<=n-1;i++)
+        {
+            // Inner loop for printing white spaces and *
+            for(var j=1;j<=i;j++)
+            {
+                document.write("&nbsp;&nbsp;");
+            }
+            {
+                for(var k=(n-i)*2-1;k>0;k--)
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
